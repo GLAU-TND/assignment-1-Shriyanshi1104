@@ -71,4 +71,10 @@ public class Person implements Comparable<Person> {
                     "Contact Number(s): " + getPhoneNumber() + "\n" +
                     "-------- * -------- * -------- * --------";
     }
+
+    //compareTo method for comparing objects of person class
+    @Override
+    public int compareTo(Person newPerson) {
+        return this.getFirstName().compareTo(newPerson.getFirstName());
+    }
 }
