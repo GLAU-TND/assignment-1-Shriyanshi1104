@@ -15,4 +15,13 @@ public class MyLinkedList<T extends  Comparable<T>> {
         iter = head;
     }   //setter for head
 
+    public Node<T> getIter() {
+        return iter;
+    }                //Getter for iter
+
+    public void setIter(Node<T> iter) {
+        this.iter = iter;
+    }  //Setter for iter
+
+
 }
