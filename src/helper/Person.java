@@ -39,5 +39,19 @@ public class Person implements Comparable<Person> {
         this.emailID = emailID;
     }
 
+    //Getter for fetching all phone numbers
+    public StringBuffer getPhoneNumber() {
+        return this.phoneNumbers;
+    }
+
+    //Setter for inserting new phone numbers
+    public void setPhoneNumbers(String phoneNumber) {
+        if (phoneNumbers == null) {
+            this.phoneNumbers = new StringBuffer(phoneNumber);
+        } else {
+            this.phoneNumbers.append(", " + phoneNumber);
+        }
+    }
+
 
 }
